@@ -47,7 +47,7 @@
             </div>
           </nav>
     </header>
-    <main class="container">
+    <main class="container-fluid">
         <div class="row">
             <div class="col-3"> <!--start left block-->
                 <h1 class="fs-5 text-primary text-center ms-2">Категорії</h1>
@@ -66,7 +66,16 @@
                     </li>
                 </ul>
             </div> <!--end left block-->
-            <div class="col-9"> <!--start right block-->
+            <div class="col-9">
+                <div class="row">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                      </nav>
+                </div>
+                <!--start right block-->
                 <div class="row d-flex justify-content-evenly gap-1">
                     
                         <div class="card" style="width: 18rem;">
@@ -98,7 +107,19 @@
                         </div>
                     
                 </div>
+                <div class="row">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                </div>
             </div> <!--end right block-->
+ 
         </div> <!--end row-->
     </main>
 
